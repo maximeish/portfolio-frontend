@@ -6,7 +6,9 @@
 
 <img align="left" alt="Emotion" width="60px" src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png"/>
 
-## Available Scripts
+---
+
+### Available Scripts
 
 In the project directory, you can run:
 
