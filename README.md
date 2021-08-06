@@ -1,6 +1,6 @@
 # My current portfolio in development using:
 
-[<img align="left" alt="React" width="60px" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"/>][github]
+!['React'](https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg)
 
 [<img align="left" alt="Chakra UI" width="60px" src="https://github.com/chakra-ui/chakra-ui/blob/main/logo/logo-colored%402x.png"/>][github]
 
