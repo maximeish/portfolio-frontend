@@ -1,10 +1,10 @@
 # My current portfolio in development using:
 
-!['React'](https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg)
+<img align="left" alt="React" width="60px" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"/>
 
-[<img align="left" alt="Chakra UI" width="60px" src="https://github.com/chakra-ui/chakra-ui/blob/main/logo/logo-colored%402x.png"/>][github]
+<img align="left" alt="Chakra UI" width="60px" src="https://github.com/chakra-ui/chakra-ui/blob/main/logo/logo-colored%402x.png"/>
 
-[<img align="left" alt="Emotion" width="60px" src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png"/>][github]
+<img align="left" alt="Emotion" width="60px" src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png"/>
 
 ## Available Scripts
 
