@@ -1,14 +1,16 @@
 # My current portfolio in development using:
 
+<p>
 <img align="left" alt="React" width="60px" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"/>
 
 <img align="left" alt="Chakra UI" width="60px" src="https://github.com/chakra-ui/chakra-ui/blob/main/logo/logo-colored%402x.png"/>
 
 <img align="left" alt="Emotion" width="60px" src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png"/>
+</p>
 
 ---
 
-### Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
