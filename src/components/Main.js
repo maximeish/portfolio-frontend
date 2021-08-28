@@ -169,9 +169,11 @@ const Main = () => {
             />
           </SimpleGrid>
           <SeeMore>
-            <Button leftIcon={<FiGithub />} color="#6C63FF" variant="outline">
-              See More
-            </Button>
+            <a href="https://github.com/maximeish">
+              <Button leftIcon={<FiGithub />} color="#6C63FF" variant="outline">
+                See More
+              </Button>
+            </a>
           </SeeMore>
         </ProjectsWrapper>
 
