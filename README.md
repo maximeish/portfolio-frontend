@@ -1,4 +1,4 @@
-# My current portfolio in development using:
+# My current portfolio in using:
 
 <p>
 <img align="left" alt="React" width="60px" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"/>
