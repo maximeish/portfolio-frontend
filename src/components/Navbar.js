@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo.svg";
-import styled from "@emotion/styled";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
+import Logo from "../assets/images/logo.svg"
+import styled from "@emotion/styled"
 
-const NavWrapper = styled.nav``;
+const NavWrapper = styled.nav``
 
 const Hamburger = styled.div`
   display: none;
@@ -84,7 +84,7 @@ const Hamburger = styled.div`
       }
     }
   }
-`;
+`
 
 const NavMenu = styled.ul`
   width: 100%;
@@ -106,7 +106,7 @@ const NavMenu = styled.ul`
       row-gap: 1em;
     }
   }
-`;
+`
 
 const NavLink = styled.a`
   opacity: 0.7;
@@ -115,14 +115,14 @@ const NavLink = styled.a`
   :hover {
     opacity: 1;
   }
-`;
+`
 
 const Navbar = () => {
-  const [isMenuToggled, setMenuToggled] = useState(false);
+  const [isMenuToggled, setMenuToggled] = useState(false)
 
   const toggleMenu = () => {
-    setMenuToggled(!isMenuToggled);
-  };
+    setMenuToggled(!isMenuToggled)
+  }
 
   return (
     <NavWrapper className="flex flex-col items-center justify-center w-full p-4 pt-8 gap-y-4 md:gap-y-0 md:items-center md:p-8 md:flex-row md:justify-between md:">
@@ -139,25 +139,16 @@ const Navbar = () => {
         <li>
           <NavLink href="#about-me">About me</NavLink>
         </li>
-        <li>
+        {/* <li>
           <Link to="/blog">Blog</Link>
-        </li>
+        </li> */}
         <li>
-          <NavLink href="#send-message">Send me a message</NavLink>
+          <NavLink href="#contact-me">Send me a message</NavLink>
         </li>
       </NavMenu>
 
-      <Hamburger
-        onClick={toggleMenu}
-        className={isMenuToggled ? "-menu-open" : ""}
-      >
-        <svg
-          width="36px"
-          height="36px"
-          viewBox="0 0 48 48"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+      <Hamburger onClick={toggleMenu} className={isMenuToggled ? "-menu-open" : ""}>
+        <svg width="36px" height="36px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <g>
             <line x1="0" y1="17" x2="48" y2="17" strokeWidth="1" />
             <line x1="0" y1="31" x2="48" y2="31" strokeWidth="1" />
@@ -170,7 +161,7 @@ const Navbar = () => {
         </svg>
       </Hamburger>
     </NavWrapper>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -1,105 +1,351 @@
-import React from "react";
-import Navbar from "./Navbar";
-import styled from "@emotion/styled";
-import CurrentTopic from "../utilities/CurrentTopic";
-import { Text, Button, Grid, GridItem, Box } from "@chakra-ui/react";
-import coderIcon from "../assets/images/coder-icon.svg";
-import nextSectionIcon from "../assets/images/next-section.svg";
+import React from "react"
+import Navbar from "./Navbar"
+import styled from "@emotion/styled"
+import { CurrentTopic, ProjectBox } from "../shared/"
+import { Text, Button, SimpleGrid, Divider, Heading } from "@chakra-ui/react"
+import coderIcon from "../assets/images/coder-icon.svg"
+import typeScriptIcon from "../assets/images/typescript-icon.svg"
+import reactIcon from "../assets/images/react-icon.svg"
+import reduxIcon from "../assets/images/redux-icon.svg"
+import figmaIcon from "../assets/images/figma-icon.svg"
+import firebaseIcon from "../assets/images/firebase-icon.svg"
+import tailwindCSSIcon from "../assets/images/tailwindcss-icon.svg"
+import expressIcon from "../assets/images/express-icon.svg"
+import nodejsIcon from "../assets/images/nodejs-icon.svg"
+import mongodbIcon from "../assets/images/mongodb-icon.svg"
+import andelaIcon from "../assets/images/andela-logo.svg"
+import uplusLogo from "../assets/images/uplus-logo.png"
+import phantomLogo from "../assets/images/phantom-logo.svg"
+import pencilIcon from "../assets/images/pencil-icon.gif"
+import glassesImage from "../assets/images/glasses-image.png"
+import screenWidth from "../utilities/screenWidth"
+import { FiArrowDown, FiGithub, FiLinkedin } from "react-icons/fi"
+import { HiOutlineMail } from "react-icons/hi"
+import { TiSocialLinkedinCircular } from "react-icons/ti"
+import { ImPencil2 } from "react-icons/im"
+import {
+  IntroPageWrapper,
+  IntroPageSection,
+  IntroLeftSide,
+  LeftContentWrapper,
+  IntroRightSide,
+  RightContentWrapper,
+  DevIcon,
+  WorkButton,
+  WorkButtonMobile,
+} from "./styles/introSectionStyles"
+import { ProjectsWrapper, SeeMore } from "./styles/projectsSectionStyles"
+// import { extendTheme } from "@chakra-ui/react"
 
-const LandingPageWrapper = styled.div``;
+// console.log("screen width", ScreenWidth)
+// import nextSectionIcon from "../assets/images/next-section.svg"
 
-const IntroPageWrapper = styled.main`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
+// console.log("current width", ScreenWidth)
 
-const IntroPageSection = styled.section`
-  max-height: 100%;
-  height: 100%;
-`;
+const LandingPageWrapper = styled.div`
+  padding: 0 4em;
 
-const IntroRightSide = styled.div`
+  @media (max-width: 768px) {
+    padding: 1em 0.5em 0 0.5em;
+  }
+`
+
+// const DownIcon = styled.div``
+
+const AboutMeWrapper = styled.section`
+  /* height: 100vh; */
+  padding: 2em 0 1em 0;
+`
+
+const TechStack = styled.div``
+
+const CompaniesWrapper = styled.section``
+
+const ContactWrapper = styled.section`
+  /* height: 50vh; */
+`
+
+const FooterWrapper = styled.section`
   background: #6c63ff;
-`;
+  padding: 4em 6em;
+  text-align: center;
 
-const IntroLeftSide = styled.div`
   display: flex;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
-`;
-
-const IntroLeftContentWrapper = styled.div``;
-
-// const WorkButton = styled.div`
-//   width: 161px;
-//   height: 60px;
-//   background: #6c63ff;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 7px;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 22px;
-//   line-height: 33px;
-//   letter-spacing: 0.02em;
-//   color: #ffffff;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
+`
 
 const Main = () => {
+  const width = screenWidth()
+
   return (
-    <LandingPageWrapper>
-      <IntroPageWrapper>
-        <Navbar />
-        <IntroPageSection className="flex flex-auto">
-          <IntroLeftSide className="flex items-start justify-start flex-grow w-3/5 pl-8 border-red-700 border-10">
-            <IntroLeftContentWrapper className="border-2">
-              <div className="self-start justify-self-start">
-                <CurrentTopic topicText={"Maxime Ishimwe"} />
-                <Text fontSize="4xl">
-                  Hello,
-                  <br /> my name's Maxime.
+    <>
+      <LandingPageWrapper>
+        <IntroPageWrapper>
+          <Navbar />
+          <IntroPageSection>
+            <IntroLeftSide>
+              <LeftContentWrapper>
+                <CurrentTopic hidden={width > 768 ? false : true} topicText={"Maxime Ishimwe"} />
+                <Text hidden={width > 768 ? false : true} fontSize="4xl">
+                  Hello, <br /> my name's Maxime.
                 </Text>
-                <Button backgroundColor="purple.700" color="white">
-                  My Work
-                </Button>
-              </div>
-              <div className="">
-                <div className="relative bottom-0 left-0 flex items-end justify-between w-auto w-1/2 mt-auto">
-                  <img src={coderIcon} alt="" />
-                </div>
-                <div className="relative left-0 flex items-center justify-center w-full bottom-4">
-                  <img src={nextSectionIcon} alt="" />
-                </div>
-              </div>
-            </IntroLeftContentWrapper>
-          </IntroLeftSide>
-          <IntroRightSide className="flex items-center justify-start flex-grow w-2/5 pl-8">
-            <Text fontSize="4xl" color="whiteAlpha.900" lineHeight="60px">
-              I’m a Full stack Developer
-              <br />
-              and a UI/UX Designer.
-            </Text>
-          </IntroRightSide>
-        </IntroPageSection>
-      </IntroPageWrapper>
+                <a href="#projects-section">
+                  <Button rightIcon={<FiArrowDown />} style={width > 768 ? WorkButton : WorkButtonMobile}>
+                    My Work
+                  </Button>
+                </a>
+              </LeftContentWrapper>
+            </IntroLeftSide>
+            <IntroRightSide>
+              <RightContentWrapper>
+                <Text
+                  textAlign={width > 768 ? "center" : "left"}
+                  fontSize={width > 768 ? "3xl" : "26px"}
+                  color="whiteAlpha.900"
+                  lineHeight={width > 768 ? "55px" : "38px"}
+                  letterSpacing={width > 768 && "wide"}>
+                  {width < 768 && (
+                    <span>
+                      Hello,
+                      <br />
+                      my name's Maxime. <br /> <br />
+                    </span>
+                  )}
+                  Full stack Developer <br />
+                  and UI Designer.
+                </Text>
+              </RightContentWrapper>
+            </IntroRightSide>
+            <DevIcon>
+              <img src={coderIcon} alt="" />
+            </DevIcon>
+          </IntroPageSection>
+        </IntroPageWrapper>
 
-      <section>
-        <CurrentTopic topicText={"Projects I worked on"} />
-        <Text>They mainly use React</Text>
-        <Grid templateColumns="repeat(2, 0.5fr)" columnGap={4} rowGap={4}>
-          <Box w="200" h="200" />
-          <Box w="200" h="200" />
-          <Box w="200" h="200" />
-          <Box w="200" h="200" />
-          <Box w="200" h="200" />
-        </Grid>
-      </section>
-    </LandingPageWrapper>
-  );
-};
+        <Divider margin="2em 0" />
 
-export default Main;
+        <ProjectsWrapper id="projects-section">
+          <CurrentTopic topicText={"Projects I worked on"} styles={{ marginBottom: "1.5em" }} />
+          <Text textAlign="center"> Here are some examples of projects I collaborated on </Text>
+          <SimpleGrid
+            templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+            columnGap={4}
+            rowGap="2em"
+            marginTop="2em"
+            marginBottom="1em"
+            justifyContent="center"
+            alignContent="center"
+            justifyItems="center"
+            minChildWidth="120px"
+            spacing="40px">
+            <ProjectBox
+              overlayImage={uplusLogo}
+              altText="uplus"
+              headingText="Uplus Mutual Partners"
+              descriptionText="A digital group financing platform that enables people to pull funds together in a group"
+              siteLink="https://uplus.rw"
+            />
+            <ProjectBox
+              overlayImage={phantomLogo}
+              altText="phantom"
+              headingText="Phantom"
+              descriptionText="Phantom is a web application that allows passengers to track bus location and movements around Kigali"
+              siteLink="https://orcas-phantom-frontend.herokuapp.com"
+            />
+            <ProjectBox
+              overlayImage={pencilIcon}
+              altText="quizapp"
+              headingText="QuizApp"
+              descriptionText="QuizApp is a web application for daily practice quizzes to sharpen your skills in different subjects, and save your score"
+              siteLink="http://quizapp.byethost11.com/dev"
+            />
+            <ProjectBox
+              overlayImage={glassesImage}
+              altText="3d-modeling"
+              headingText="Glasses 3D Model configurator"
+              descriptionText="A side project for a 3D GLTF glasses model configurator using React Three Fiber"
+              siteLink="https://glasses-gltf.netlify.app/"
+            />
+          </SimpleGrid>
+          <SeeMore>
+            <Button leftIcon={<FiGithub />} color="#6C63FF" variant="outline">
+              See More
+            </Button>
+          </SeeMore>
+        </ProjectsWrapper>
+
+        <Divider margin="2em 0" />
+
+        <AboutMeWrapper id="about-me">
+          <CurrentTopic topicText={"About Me"} styles={{ marginBottom: "1.5em" }} />
+          <Text padding="0 2em" letterSpacing="wide">
+            I am an enthusiastic full-stack developer with a strong will to contribute to team success through working in Agile distributed
+            teams (either remotely or on-site), and attention to detail. I took professional courses from Andela Technical Leadership
+            Program in Software Engineering specializing in Full-stack web development. I am also a self-taught mobile developer mainly
+            using React Native.
+          </Text>
+
+          <Text padding="1em 2em" letterSpacing="wide">
+            Here are some technologies that I work with...
+          </Text>
+
+          <SimpleGrid
+            templateColumns={width > 768 ? "repeat(3, 1fr)" : "repeat(1, 1fr)"}
+            columnGap={width > 768 ? 4 : 0}
+            rowGap={width > 768 ? "4em" : "2em"}
+            marginTop="2em"
+            marginBottom="2em"
+            justifyContent="center"
+            justifyItems="center"
+            alignContent="center"
+            minChildWidth="120px"
+            gridAutoRows={width < 768 && "150px"}
+            spacing="40px">
+            <TechStack>
+              <img src={typeScriptIcon} alt="typescript" />
+            </TechStack>
+            <TechStack>
+              <img src={reactIcon} alt="react" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={reduxIcon} alt="redux" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={tailwindCSSIcon} alt="tailwindCSS" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={figmaIcon} alt="figma" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={nodejsIcon} alt="nodejs" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={mongodbIcon} alt="mongoDB" width="150px" height="150px" />
+            </TechStack>
+            <TechStack>
+              <img src={expressIcon} alt="express" width="150px" height="150px" />
+            </TechStack>
+          </SimpleGrid>
+
+          <Text padding="0 2em" letterSpacing="wide" textAlign="center">
+            ...and a few more. Plus, I am willing to learn new ones too when needed.
+          </Text>
+        </AboutMeWrapper>
+
+        <Divider margin="2em 0" />
+
+        <CompaniesWrapper>
+          <Text textAlign="center" letterSpacing="wide">
+            I'm glad to have also been trained and worked with some awesome companies...
+          </Text>
+          <SimpleGrid
+            templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+            columnGap={width > 768 ? 2 : 0}
+            rowGap={width > 768 ? "4em" : "2em"}
+            marginTop="4em"
+            marginBottom="4em"
+            justifyContent="center"
+            justifyItems="center"
+            alignContent="center"
+            minChildWidth="120px"
+            gridAutoRows={width < 768 && "150px"}
+            spacing="40px">
+            <TechStack>
+              <img src={andelaIcon} width="150px" height="150px" alt="andela rwanda" />
+            </TechStack>
+            <TechStack>
+              <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
+            </TechStack>
+            {/* <TechStack>
+            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+          </TechStack> */}
+          </SimpleGrid>
+        </CompaniesWrapper>
+
+        <Divider margin="2em 0" />
+
+        {/* <TestimonialsWrapper>
+        <CurrentTopic topicText={"Testimonials"} styles={{ marginBottom: "1.5em" }} />
+        <Text padding="0 2em" letterSpacing="wide">
+          Here is who I worked with what they said...
+        </Text>
+
+      </TestimonialsWrapper> 
+      
+      <Divider margin="2em 0" />
+      */}
+
+        <ContactWrapper id="contact-me">
+          <CurrentTopic topicText={"Contact Me"} styles={{ marginBottom: "1.5em" }} />
+          <Heading textAlign="center" margin="0 0 1em 0" letterSpacing="wide">
+            Interested in working together?
+          </Heading>
+          <div style={{ display: "flex", flexDirection: "column", rowGap: "2em", alignItems: "center", justifyContent: "center" }}>
+            <a href="mailto:mxmishimwe5@gmail.com">
+              <Button leftIcon={<HiOutlineMail />} letterSpacing="wide" variant="outline" colorScheme="purple">
+                Send me an email
+              </Button>
+            </a>
+
+            <a href="https://linkedin.com/in/maximeish">
+              <Button leftIcon={<FiLinkedin />} letterSpacing="wider" colorScheme="linkedin">
+                Contact me on LinkedIn
+              </Button>
+            </a>
+          </div>
+        </ContactWrapper>
+      </LandingPageWrapper>
+
+      <Divider margin="2em 0" />
+
+      <Heading textAlign="center" opacity="0.6" fontSize="medium" letterSpacing="wider" marginTop="4em">
+        Thanks for visiting my site
+      </Heading>
+      <Text textAlign="center" opacity="0.6" fontSize="small" letterSpacing="wider" margin="1em 0 4em 0">
+        Please be aware that I am still working on some features to be added to the site, including the blogging system and sending messages
+      </Text>
+
+      {/* <FooterWrapper>
+        <Heading fontWeight="bold" letterSpacing="wider" color="whiteAlpha.900">
+          Maxime Ishimwe
+        </Heading>
+        <SimpleGrid
+          templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+          columnGap={width > 768 ? 4 : 0}
+          rowGap={width > 768 ? "4em" : "2em"}
+          marginTop="2em"
+          marginBottom="2em"
+          justifyContent="center"
+          justifyItems="center"
+          alignContent="center"
+          minChildWidth="120px"
+          gridAutoRows={width < 768 && "150px"}
+          spacing="40px">
+          <TechStack>
+            <a href="https://linkedin.com/in/maximeish/">
+              <Button iconSpacing="auto" leftIcon={<TiSocialLinkedinCircular />} variant="ghost" colorScheme="linkedin"></Button>
+            </a>
+          </TechStack>
+          <TechStack>
+            <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
+          </TechStack>
+          <TechStack>
+            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+          </TechStack>
+          <TechStack>
+            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+          </TechStack>
+          <TechStack>
+            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+          </TechStack>
+        </SimpleGrid>
+      </FooterWrapper> */}
+    </>
+  )
+}
+
+export default Main
