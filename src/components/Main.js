@@ -21,8 +21,8 @@ import glassesImage from "../assets/images/glasses-image.png"
 import screenWidth from "../utilities/screenWidth"
 import { FiArrowDown, FiGithub, FiLinkedin } from "react-icons/fi"
 import { HiOutlineMail } from "react-icons/hi"
-import { TiSocialLinkedinCircular } from "react-icons/ti"
-import { ImPencil2 } from "react-icons/im"
+// import { TiSocialLinkedinCircular } from "react-icons/ti"
+// import { ImPencil2 } from "react-icons/im"
 import {
   IntroPageWrapper,
   IntroPageSection,
@@ -65,15 +65,15 @@ const ContactWrapper = styled.section`
   /* height: 50vh; */
 `
 
-const FooterWrapper = styled.section`
-  background: #6c63ff;
-  padding: 4em 6em;
-  text-align: center;
+// const FooterWrapper = styled.section`
+//   background: #6c63ff;
+//   padding: 4em 6em;
+//   text-align: center;
 
-  display: flex;
-  align-items: space-between;
-  justify-content: center;
-`
+//   display: flex;
+//   align-items: space-between;
+//   justify-content: center;
+// `
 
 const Main = () => {
   const width = screenWidth()
