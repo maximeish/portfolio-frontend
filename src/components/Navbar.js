@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import styled from "@emotion/styled"
+import { AppContext } from "../context/AppContext"
 
 const NavWrapper = styled.nav``
 
@@ -118,11 +119,13 @@ const NavLink = styled.a`
 `
 
 const Navbar = () => {
-  const [isMenuToggled, setMenuToggled] = useState(false)
+  const { state, setState } = useContext(AppContext)
 
-  const toggleMenu = () => {
-    setMenuToggled(!isMenuToggled)
-  }
+  const toggleMenu = () =>
+    setState({
+      ...state,
+      isMenuToggled: !state.isMenuToggled,
+    })
 
   return (
     <NavWrapper className="flex flex-col items-center justify-center w-full p-4 pt-8 gap-y-4 md:gap-y-0 md:items-center md:p-8 md:flex-row md:justify-between md:">
@@ -132,7 +135,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <NavMenu className={isMenuToggled ? "-open" : null}>
+      <NavMenu className={state.isMenuToggled ? "-open" : null}>
         <li>
           <NavLink href="#projects">Projects</NavLink>
         </li>
@@ -147,7 +150,7 @@ const Navbar = () => {
         </li>
       </NavMenu>
 
-      <Hamburger onClick={toggleMenu} className={isMenuToggled ? "-menu-open" : ""}>
+      <Hamburger onClick={toggleMenu} className={state.isMenuToggled ? "-menu-open" : ""}>
         <svg width="36px" height="36px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <g>
             <line x1="0" y1="17" x2="48" y2="17" strokeWidth="1" />

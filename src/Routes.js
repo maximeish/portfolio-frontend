@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Main from "./components/Main";
-import Blog from "./components/Blog";
+import React from "react"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import Main from "./components/MainPage/Main"
+import Blog from "./components/Blog"
 
 const Routes = () => (
   <Router>
@@ -17,5 +17,5 @@ const Routes = () => (
       </Switch>
     </div>
   </Router>
-);
-export default Routes;
+)
+export default Routes
