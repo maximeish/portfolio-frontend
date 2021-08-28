@@ -1,12 +1,15 @@
 import { ChakraProvider } from "@chakra-ui/react"
 import Routes from "./Routes"
 import "./styles/App.css"
+import ContextWrapper from "./context/AppContext"
 
 const App = () => {
   return (
-    <ChakraProvider>
-      <Routes />
-    </ChakraProvider>
+    <ContextWrapper>
+      <ChakraProvider>
+        <Routes />
+      </ChakraProvider>
+    </ContextWrapper>
   )
 }
 

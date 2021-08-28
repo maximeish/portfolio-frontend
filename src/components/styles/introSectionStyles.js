@@ -16,6 +16,7 @@ export const IntroPageSection = styled.section`
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
+    row-gap: 3em;
     align-items: center;
     justify-content: flex-end;
   }
@@ -28,6 +29,11 @@ export const IntroLeftSide = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+    justify-content: center;
+  }
 `
 
 export const IntroRightSide = styled.div`
@@ -52,8 +58,9 @@ export const LeftContentWrapper = styled.div`
 
 export const RightContentWrapper = styled.div`
   background: #6c63ff;
-  height: 60%;
-  width: 60%;
+  padding: 2em;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -62,8 +69,10 @@ export const RightContentWrapper = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    height: 100%;
-    width: 100%;
+    padding: 0px;
+    height: 280px;
+    width: 280px;
+    border-radius: 10px;
   }
 `
 
@@ -129,7 +138,6 @@ export const WorkButtonMobile = {
   padding: "0.5em 1em",
   fontSize: "small",
   borderRadius: "5px",
-  margin: "3em 0 0 1em",
 
   background: "#6C63FF",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",

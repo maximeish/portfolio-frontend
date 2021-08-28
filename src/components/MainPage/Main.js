@@ -1,40 +1,28 @@
 import React from "react"
-import Navbar from "./Navbar"
 import styled from "@emotion/styled"
-import { CurrentTopic, ProjectBox } from "../shared/"
+import { CurrentTopic, ProjectBox } from "../../shared"
 import { Text, Button, SimpleGrid, Divider, Heading } from "@chakra-ui/react"
-import coderIcon from "../assets/images/coder-icon.svg"
-import typeScriptIcon from "../assets/images/typescript-icon.svg"
-import reactIcon from "../assets/images/react-icon.svg"
-import reduxIcon from "../assets/images/redux-icon.svg"
-import figmaIcon from "../assets/images/figma-icon.svg"
-import firebaseIcon from "../assets/images/firebase-icon.svg"
-import tailwindCSSIcon from "../assets/images/tailwindcss-icon.svg"
-import expressIcon from "../assets/images/express-icon.svg"
-import nodejsIcon from "../assets/images/nodejs-icon.svg"
-import mongodbIcon from "../assets/images/mongodb-icon.svg"
-import andelaIcon from "../assets/images/andela-logo.svg"
-import uplusLogo from "../assets/images/uplus-logo.png"
-import phantomLogo from "../assets/images/phantom-logo.svg"
-import pencilIcon from "../assets/images/pencil-icon.gif"
-import glassesImage from "../assets/images/glasses-image.png"
-import screenWidth from "../utilities/screenWidth"
-import { FiArrowDown, FiGithub, FiLinkedin } from "react-icons/fi"
+import typeScriptIcon from "../../assets/images/typescript-icon.svg"
+import reactIcon from "../../assets/images/react-icon.svg"
+import reduxIcon from "../../assets/images/redux-icon.svg"
+import figmaIcon from "../../assets/images/figma-icon.svg"
+import firebaseIcon from "../../assets/images/firebase-icon.svg"
+import tailwindCSSIcon from "../../assets/images/tailwindcss-icon.svg"
+import expressIcon from "../../assets/images/express-icon.svg"
+import nodejsIcon from "../../assets/images/nodejs-icon.svg"
+import mongodbIcon from "../../assets/images/mongodb-icon.svg"
+import andelaIcon from "../../assets/images/andela-logo.svg"
+import uplusLogo from "../../assets/images/uplus-logo.png"
+import phantomLogo from "../../assets/images/phantom-logo.svg"
+import pencilIcon from "../../assets/images/pencil-icon.gif"
+import glassesImage from "../../assets/images/glasses-image.png"
+import screenWidth from "../../utilities/screenWidth"
+import { FiGithub, FiLinkedin } from "react-icons/fi"
 import { HiOutlineMail } from "react-icons/hi"
 // import { TiSocialLinkedinCircular } from "react-icons/ti"
 // import { ImPencil2 } from "react-icons/im"
-import {
-  IntroPageWrapper,
-  IntroPageSection,
-  IntroLeftSide,
-  LeftContentWrapper,
-  IntroRightSide,
-  RightContentWrapper,
-  DevIcon,
-  WorkButton,
-  WorkButtonMobile,
-} from "./styles/introSectionStyles"
-import { ProjectsWrapper, SeeMore } from "./styles/projectsSectionStyles"
+import { ProjectsWrapper, SeeMore } from "../styles/projectsSectionStyles"
+import IntroSection from "./IntroSection"
 // import { extendTheme } from "@chakra-ui/react"
 
 // console.log("screen width", ScreenWidth)
@@ -81,47 +69,7 @@ const Main = () => {
   return (
     <>
       <LandingPageWrapper>
-        <IntroPageWrapper>
-          <Navbar />
-          <IntroPageSection>
-            <IntroLeftSide>
-              <LeftContentWrapper>
-                <CurrentTopic hidden={width > 768 ? false : true} topicText={"Maxime Ishimwe"} />
-                <Text hidden={width > 768 ? false : true} fontSize="4xl">
-                  Hello, <br /> my name's Maxime.
-                </Text>
-                <a href="#projects-section">
-                  <Button rightIcon={<FiArrowDown />} style={width > 768 ? WorkButton : WorkButtonMobile}>
-                    My Work
-                  </Button>
-                </a>
-              </LeftContentWrapper>
-            </IntroLeftSide>
-            <IntroRightSide>
-              <RightContentWrapper>
-                <Text
-                  textAlign={width > 768 ? "center" : "left"}
-                  fontSize={width > 768 ? "3xl" : "26px"}
-                  color="whiteAlpha.900"
-                  lineHeight={width > 768 ? "55px" : "38px"}
-                  letterSpacing={width > 768 && "wide"}>
-                  {width < 768 && (
-                    <span>
-                      Hello,
-                      <br />
-                      my name's Maxime. <br /> <br />
-                    </span>
-                  )}
-                  Full stack Developer <br />
-                  and UI Designer.
-                </Text>
-              </RightContentWrapper>
-            </IntroRightSide>
-            <DevIcon>
-              <img src={coderIcon} alt="" />
-            </DevIcon>
-          </IntroPageSection>
-        </IntroPageWrapper>
+        <IntroSection />
 
         <Divider margin="2em 0" />
 
@@ -133,7 +81,7 @@ const Main = () => {
             columnGap={4}
             rowGap="2em"
             marginTop="2em"
-            marginBottom="1em"
+            marginBottom={width > 768 ? "1em" : "2em"}
             justifyContent="center"
             alignContent="center"
             justifyItems="center"
@@ -307,7 +255,7 @@ const Main = () => {
       <Heading textAlign="center" opacity="0.6" fontSize="medium" letterSpacing="wider" marginTop="4em">
         Thanks for visiting my site
       </Heading>
-      <Text textAlign="center" opacity="0.6" fontSize="small" letterSpacing="wider" margin="1em 0 4em 0">
+      <Text textAlign="center" opacity="0.6" fontSize="small" letterSpacing="wider" margin="1em 0 4em 0" padding="1em 2em 0 2em">
         Please be aware that I am still working on some features to be added to the site, including the blogging system and sending messages
       </Text>
 
