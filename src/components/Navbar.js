@@ -137,7 +137,7 @@ const Navbar = () => {
 
       <NavMenu className={state.isMenuToggled ? "-open" : null}>
         <li>
-          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#projects-section">Projects</NavLink>
         </li>
         <li>
           <NavLink href="#about-me">About me</NavLink>
