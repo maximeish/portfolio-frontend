@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { CurrentTopic } from "../../shared"
-import { Text, Button, Divider, Heading } from "@chakra-ui/react"
+// import { CurrentTopic } from "../../shared"
+import { Text, Divider, Heading } from "@chakra-ui/react"
 import screenWidth from "../../utilities/screenWidth"
 
 import IntroSection from "./IntroSection"
@@ -10,6 +10,7 @@ import AboutMeSection from "./AboutMeSection"
 import CompaniesSection from "./CompaniesSection"
 // import TestimonialsSection from "./TestimonialsSection"
 import ContactSection from "./ContactSection"
+import FooterSection from "./FooterSection"
 
 // import nextSectionIcon from "../assets/images/next-section.svg"
 
@@ -35,15 +36,15 @@ const Main = () => {
 
         <ProjectsSection width={width} />
 
-        <Divider margin="2em 0" />
+        <Divider margin="4em 0" />
 
         <AboutMeSection width={width} />
 
-        <Divider margin="2em 0" />
+        <Divider margin="4em 0" />
 
         <CompaniesSection width={width} />
 
-        <Divider margin="2em 0" />
+        <Divider margin="4em 0" />
 
         {/* <TestimonialsSection />
 
@@ -52,7 +53,7 @@ const Main = () => {
         <ContactSection width={width} />
       </LandingPageWrapper>
 
-      <Divider margin="2em 0" />
+      <Divider margin="4em 0" />
 
       <Heading textAlign="center" opacity="0.6" fontSize="medium" letterSpacing="wider" marginTop="4em">
         Thanks for visiting my site
@@ -62,41 +63,9 @@ const Main = () => {
         messages
       </Text>
 
-      {/* <FooterWrapper>
-        <Heading fontWeight="bold" letterSpacing="wider" color="whiteAlpha.900">
-          Maxime Ishimwe
-        </Heading>
-        <SimpleGrid
-          templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
-          columnGap={width > 768 ? 4 : 0}
-          rowGap={width > 768 ? "4em" : "2em"}
-          marginTop="2em"
-          marginBottom="2em"
-          justifyContent="center"
-          justifyItems="center"
-          alignContent="center"
-          minChildWidth="120px"
-          gridAutoRows={width < 768 && "150px"}
-          spacing="40px">
-          <TechStack>
-            <a href="https://linkedin.com/in/maximeish/">
-              <Button iconSpacing="auto" leftIcon={<TiSocialLinkedinCircular />} variant="ghost" colorScheme="linkedin"></Button>
-            </a>
-          </TechStack>
-          <TechStack>
-            <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
-          </TechStack>
-          <TechStack>
-            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
-          </TechStack>
-          <TechStack>
-            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
-          </TechStack>
-          <TechStack>
-            <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
-          </TechStack>
-        </SimpleGrid>
-      </FooterWrapper> */}
+      {/* <Divider margin="2em 0" /> */}
+
+      <FooterSection width={width} />
     </>
   )
 }

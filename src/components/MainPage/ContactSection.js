@@ -14,13 +14,13 @@ const ContactSection = () => {
       </Heading>
       <ContactButtons>
         <a href="mailto:mxmishimwe5@gmail.com">
-          <Button leftIcon={<HiOutlineMail />} letterSpacing="wide" variant="outline" colorScheme="purple">
+          <Button leftIcon={<HiOutlineMail />} letterSpacing="widest" variant="outline" colorScheme="purple">
             Send me an email
           </Button>
         </a>
 
         <a href="https://linkedin.com/in/maximeish">
-          <Button leftIcon={<FiLinkedin />} letterSpacing="wider" colorScheme="linkedin">
+          <Button leftIcon={<FiLinkedin />} letterSpacing="widest" colorScheme="linkedin">
             Contact me on LinkedIn
           </Button>
         </a>

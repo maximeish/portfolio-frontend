@@ -39,31 +39,31 @@ const AboutMeSection = ({ width }) => {
         gridAutoRows={width < 768 && "150px"}
         spacing="40px">
         <TechStack>
-          <img src={typeScriptIcon} alt="typescript" />
+          <img src={typeScriptIcon} alt="typescript" title="TypeScript" />
         </TechStack>
         <TechStack>
-          <img src={reactIcon} alt="react" width="150px" height="150px" />
+          <img src={reactIcon} alt="react" width="150px" height="150px" title="React" />
         </TechStack>
         <TechStack>
-          <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
+          <img src={firebaseIcon} alt="firebase" width="150px" height="150px" title="Firebase" />
         </TechStack>
         <TechStack>
-          <img src={reduxIcon} alt="redux" width="150px" height="150px" />
+          <img src={reduxIcon} alt="redux" width="150px" height="150px" title="Redux" />
         </TechStack>
         <TechStack>
-          <img src={tailwindCSSIcon} alt="tailwindCSS" width="150px" height="150px" />
+          <img src={tailwindCSSIcon} alt="tailwindCSS" width="150px" height="150px" title="TailwindCSS" />
         </TechStack>
         <TechStack>
-          <img src={figmaIcon} alt="figma" width="150px" height="150px" />
+          <img src={figmaIcon} alt="figma" width="150px" height="150px" title="Figma" />
         </TechStack>
         <TechStack>
-          <img src={nodejsIcon} alt="nodejs" width="150px" height="150px" />
+          <img src={nodejsIcon} alt="nodejs" width="150px" height="150px" title="NodeJS" />
         </TechStack>
         <TechStack>
-          <img src={mongodbIcon} alt="mongoDB" width="150px" height="150px" />
+          <img src={mongodbIcon} alt="mongoDB" width="150px" height="150px" title="MongoDB" />
         </TechStack>
         <TechStack>
-          <img src={expressIcon} alt="express" width="150px" height="150px" />
+          <img src={expressIcon} alt="express" width="150px" height="150px" title="Express" />
         </TechStack>
       </SimpleGrid>
 
