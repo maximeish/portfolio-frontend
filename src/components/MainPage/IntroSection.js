@@ -15,11 +15,9 @@ import coderIcon from "../../assets/images/coder-icon.svg"
 import { FiArrowDown } from "react-icons/fi"
 import { CurrentTopic } from "../../shared"
 import { Text, Button } from "@chakra-ui/react"
-import screenWidth from "../../utilities/screenWidth"
 import { AppContext } from "../../context/AppContext"
 
-const IntroSection = () => {
-  const width = screenWidth()
+const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)
 
   return (

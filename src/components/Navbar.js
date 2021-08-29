@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import styled from "@emotion/styled"
 import { AppContext } from "../context/AppContext"
+import { GrProjects } from "react-icons/gr"
+import { BiUser } from "react-icons/bi"
+import { AiOutlineMessage } from "react-icons/ai"
 
 const NavWrapper = styled.nav``
 
@@ -113,6 +116,11 @@ const NavLink = styled.a`
   opacity: 0.7;
   transition: all 0.2s ease;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5em;
+
   :hover {
     opacity: 1;
   }
@@ -137,16 +145,22 @@ const Navbar = () => {
 
       <NavMenu className={state.isMenuToggled ? "-open" : null}>
         <li>
-          <NavLink href="#projects-section">Projects</NavLink>
+          <NavLink href="#projects-section">
+            <GrProjects /> Projects
+          </NavLink>
         </li>
         <li>
-          <NavLink href="#about-me">About me</NavLink>
+          <NavLink href="#about-me">
+            <BiUser /> About me
+          </NavLink>
         </li>
         {/* <li>
           <Link to="/blog">Blog</Link>
         </li> */}
         <li>
-          <NavLink href="#contact-me">Send me a message</NavLink>
+          <NavLink href="#contact-me">
+            <AiOutlineMessage /> Send me a message
+          </NavLink>
         </li>
       </NavMenu>
 
