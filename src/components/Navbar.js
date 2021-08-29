@@ -107,7 +107,7 @@ const NavMenu = styled.ul`
       display: flex;
       flex-direction: column;
       margin-top: 2em;
-      row-gap: 1em;
+      row-gap: 1.2em;
     }
   }
 `
@@ -115,6 +115,8 @@ const NavMenu = styled.ul`
 const NavLink = styled.a`
   opacity: 0.7;
   transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+  font-weight: 550;
 
   display: flex;
   align-items: center;
@@ -139,7 +141,7 @@ const Navbar = () => {
     <NavWrapper className="flex flex-col items-center justify-center w-full p-4 pt-8 gap-y-4 md:gap-y-0 md:items-center md:p-8 md:flex-row md:justify-between md:">
       <div>
         <Link to="/">
-          <img src={Logo} alt="Maxime Ishimwe" />
+          <img style={{ opacity: 0.9 }} src={Logo} alt="Maxime Ishimwe" />
         </Link>
       </div>
 

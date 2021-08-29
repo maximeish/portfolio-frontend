@@ -17,9 +17,9 @@ const AboutMeSection = ({ width }) => {
     <AboutMeWrapper id="about-me">
       <CurrentTopic topicText={"About Me"} styles={{ marginBottom: "1.5em" }} />
       <Text padding="0 2em" letterSpacing="wide">
-        I am an enthusiastic full-stack developer with a strong will to contribute to team success through working in Agile distributed
-        teams (either remotely or on-site), and attention to detail. I took professional courses from Andela Technical Leadership Program in
-        Software Engineering specializing in Full-stack web development. I am also a self-taught mobile developer mainly using React Native.
+        I am a full-stack developer with a strong will to contribute to team success through working in Agile distributed teams (either
+        remotely or on-site). I took professional courses from Andela Technical Leadership Program in Software Engineering specializing in
+        Full-stack web development. I am also a self-taught mobile developer mainly using React Native.
       </Text>
 
       <Text padding="1em 2em" letterSpacing="wide">
