@@ -1,5 +1,5 @@
 import React from "react"
-import { ContactWrapper, ContactButtons } from "../styles/contactSectionStyles"
+import { ContactWrapper, ContactButtons } from "../styles/contactSectionStyles.js"
 import { CurrentTopic } from "../../shared"
 import { Heading, Button } from "@chakra-ui/react"
 import { FiLinkedin } from "react-icons/fi"

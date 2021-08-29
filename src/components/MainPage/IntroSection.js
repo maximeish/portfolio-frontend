@@ -9,13 +9,13 @@ import {
   DevIcon,
   WorkButton,
   WorkButtonMobile,
-} from "../styles/introSectionStyles"
-import Navbar from "../Navbar"
+} from "../styles/introSectionStyles.js"
+import Navbar from "../Navbar.js"
 import coderIcon from "../../assets/images/coder-icon.svg"
 import { FiArrowDown } from "react-icons/fi"
 import { CurrentTopic } from "../../shared"
 import { Text, Button } from "@chakra-ui/react"
-import { AppContext } from "../../context/AppContext"
+import { AppContext } from "../../context/AppContext.js"
 
 const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)

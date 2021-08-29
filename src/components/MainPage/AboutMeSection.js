@@ -1,5 +1,5 @@
 import React from "react"
-import { AboutMeWrapper, TechStack } from "../styles/aboutSectionStyles"
+import { AboutMeWrapper, TechStack } from "../styles/aboutSectionStyles.js"
 import { CurrentTopic } from "../../shared"
 import { Text, SimpleGrid } from "@chakra-ui/react"
 import typeScriptIcon from "../../assets/images/typescript-icon.svg"

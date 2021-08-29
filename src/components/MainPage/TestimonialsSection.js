@@ -1,7 +1,7 @@
 import React from "react"
 import { CurrentTopic } from "../../shared"
 import { Text } from "@chakra-ui/react"
-import { TestimonialsWrapper } from "../styles/testimonialsSectionStyles"
+import { TestimonialsWrapper } from "../styles/testimonialsSectionStyles.js"
 
 const TestimonialsSection = () => {
   return (

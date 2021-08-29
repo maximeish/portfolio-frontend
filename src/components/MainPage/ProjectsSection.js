@@ -1,5 +1,5 @@
 import React from "react"
-import { ProjectsWrapper, SeeMore } from "../styles/projectsSectionStyles"
+import { ProjectsWrapper, SeeMore } from "../styles/projectsSectionStyles.js"
 import { CurrentTopic, ProjectBox } from "../../shared"
 import uplusLogo from "../../assets/images/uplus-logo.png"
 import phantomLogo from "../../assets/images/phantom-logo.svg"

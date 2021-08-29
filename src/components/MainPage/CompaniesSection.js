@@ -1,7 +1,7 @@
 import React from "react"
 import andelaIcon from "../../assets/images/andela-logo.svg"
 import uplusLogo from "../../assets/images/uplus-logo.png"
-import { CompaniesWrapper } from "../styles/companiesSectionStyles"
+import { CompaniesWrapper } from "../styles/companiesSectionStyles.js"
 import { Text, SimpleGrid } from "@chakra-ui/react"
 
 const CompaniesSection = ({ width }) => {
