@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import { AppContext } from "../context/AppContext"
 import { GrProjects } from "react-icons/gr"
-import { BiUser } from "react-icons/bi"
 import { AiOutlineMessage } from "react-icons/ai"
 import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
+import AboutMeIcon from "../assets/images/about-me.svg"
 
 const Navbar = () => {
   const { state, setState } = useContext(AppContext)
@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink href="#about-me">
-            <BiUser /> About me
+            <img src={AboutMeIcon} width="24px" height="24px" alt="about-me" aria-hidden="true" /> About me
           </NavLink>
         </li>
         {/* <li>
