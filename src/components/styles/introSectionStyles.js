@@ -10,11 +10,14 @@ export const IntroPageWrapper = styled.main`
 
 export const IntroPageSection = styled.section`
   max-height: 100%;
-  height: 100%;
+  height: 75%;
+  margin-left: 4.5em;
 
   display: flex;
 
   @media (max-width: 768px) {
+    height: 100%;
+    margin-left: 0;
     flex-direction: column-reverse;
     row-gap: 3em;
     align-items: center;
