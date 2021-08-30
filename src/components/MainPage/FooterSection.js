@@ -10,7 +10,7 @@ const FooterSection = ({ width }) => {
         Maxime Ishimwe
       </Heading>
       <SimpleGrid
-        templateColumns={width > 768 ? "repeat(3, 3em)" : "repeat(1, 1em)"}
+        templateColumns="repeat(3, 5em)"
         columnGap={width > 768 ? 4 : 0}
         rowGap={width > 768 ? "4em" : "2em"}
         marginTop="2em"
