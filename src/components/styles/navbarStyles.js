@@ -120,3 +120,19 @@ export const NavLink = styled.a`
     opacity: 1;
   }
 `
+
+export const RouteLink = styled.span`
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+  font-weight: 550;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5em;
+
+  :hover {
+    opacity: 1;
+  }
+`

@@ -16,9 +16,19 @@ import { FiArrowDown } from "react-icons/fi"
 import { CurrentTopic } from "../../shared"
 import { Text, Button } from "@chakra-ui/react"
 import { AppContext } from "../../context/AppContext.js"
+import { useSpring, animated, config } from "react-spring"
 
 const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)
+
+  // const [flip, set] = useState(false)
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: false,
+    delay: 200,
+    config: config.molasses,
+  })
 
   return (
     <IntroPageWrapper>
@@ -26,13 +36,17 @@ const IntroSection = ({ width }) => {
       <IntroPageSection>
         <IntroLeftSide>
           <LeftContentWrapper>
-            <CurrentTopic hidden={width > 768 ? false : true} topicText={"Maxime Ishimwe"} />
+            <animated.span style={props}>
+              <CurrentTopic hidden={width > 768 ? false : true} topicText={"Maxime Ishimwe"} />
+            </animated.span>
             <Text hidden={width > 768 ? false : true} fontSize="4xl">
-              Hello, <br /> my name's Maxime.
+              <animated.span style={props}>
+                Hello, <br /> my name's Maxime.
+              </animated.span>
             </Text>
-            <a href="#projects-section">
+            <a href="/#projects">
               <Button rightIcon={<FiArrowDown />} style={width > 768 ? WorkButton : WorkButtonMobile}>
-                My Work
+                <animated.span style={props}>My Work</animated.span>
               </Button>
             </a>
           </LeftContentWrapper>
@@ -46,14 +60,16 @@ const IntroSection = ({ width }) => {
               lineHeight={width > 768 ? "55px" : "32px"}
               letterSpacing={width > 768 && "wide"}>
               {width < 768 && (
-                <span>
+                <animated.span style={props}>
                   Hello,
                   <br />
                   my name's Maxime. <br /> <br />
-                </span>
+                </animated.span>
               )}
-              Full stack Developer <br />
-              and UI Designer.
+              <animated.span style={props}>
+                Full stack Developer <br />
+                and UI Designer.
+              </animated.span>
             </Text>
           </RightContentWrapper>
         </IntroRightSide>
