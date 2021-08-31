@@ -11,7 +11,7 @@ import { FiGithub } from "react-icons/fi"
 const ProjectsSection = ({ width }) => {
   return (
     <ProjectsWrapper id="projects">
-      <CurrentTopic topicText={"Projects"} styles={{ marginBottom: "1.5em" }} />
+      <CurrentTopic topicText="Projects" styles={{ marginBottom: "1.5em" }} />
       <Text textAlign="center"> Here are some examples of projects I worked on </Text>
       <SimpleGrid
         templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}

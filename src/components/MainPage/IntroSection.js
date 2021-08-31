@@ -37,7 +37,7 @@ const IntroSection = ({ width }) => {
         <IntroLeftSide>
           <LeftContentWrapper>
             <animated.span style={props}>
-              <CurrentTopic hidden={width > 768 ? false : true} topicText={"Maxime Ishimwe"} />
+              <CurrentTopic hidden={width > 768 ? false : true} topicText="Maxime Ishimwe" />
             </animated.span>
             <Text hidden={width > 768 ? false : true} fontSize="4xl">
               <animated.span style={props}>
