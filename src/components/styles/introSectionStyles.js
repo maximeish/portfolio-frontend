@@ -8,6 +8,8 @@ export const IntroPageWrapper = styled.main`
   flex-direction: column;
 `
 
+export const IntroText = styled.span``
+
 export const IntroPageSection = styled.section`
   max-height: 100%;
   height: 75%;

@@ -10,7 +10,7 @@ import { FiGithub } from "react-icons/fi"
 
 const ProjectsSection = ({ width }) => {
   return (
-    <ProjectsWrapper id="projects-section">
+    <ProjectsWrapper id="projects">
       <CurrentTopic topicText={"Projects"} styles={{ marginBottom: "1.5em" }} />
       <Text textAlign="center"> Here are some examples of projects I worked on </Text>
       <SimpleGrid

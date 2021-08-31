@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import { AppContext } from "../context/AppContext"
-import { GrProjects } from "react-icons/gr"
+import { GrProjects /*GrBlog*/ } from "react-icons/gr"
 import { AiOutlineMessage } from "react-icons/ai"
 import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
 import AboutMeIcon from "../assets/images/about-me.svg"
@@ -26,20 +26,24 @@ const Navbar = () => {
 
       <NavMenu className={state.isMenuToggled ? "-open" : null}>
         <li>
-          <NavLink href="#projects-section">
+          <NavLink href="/#projects">
             <GrProjects /> Projects
           </NavLink>
         </li>
         <li>
-          <NavLink href="#about-me">
+          <NavLink href="/#about-me">
             <img src={AboutMeIcon} width="24px" height="24px" alt="about-me" aria-hidden="true" /> About me
           </NavLink>
         </li>
         {/* <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog">
+            <RouteLink>
+              <GrBlog /> Blog
+            </RouteLink>
+          </Link>
         </li> */}
         <li>
-          <NavLink href="#contact-me">
+          <NavLink href="/#contact-me">
             <AiOutlineMessage /> Send me a message
           </NavLink>
         </li>
