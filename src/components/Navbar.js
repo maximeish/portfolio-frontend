@@ -2,9 +2,9 @@ import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import { AppContext } from "../context/AppContext"
-import { GrProjects, GrBlog } from "react-icons/gr"
+import { GrProjects } from "react-icons/gr"
 import { AiOutlineMessage } from "react-icons/ai"
-import { NavWrapper, NavMenu, NavLink, Hamburger, RouteLink } from "./styles/navbarStyles"
+import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
 import AboutMeIcon from "../assets/images/about-me.svg"
 
 const Navbar = () => {
