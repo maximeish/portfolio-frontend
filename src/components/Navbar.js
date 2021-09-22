@@ -35,13 +35,13 @@ const Navbar = () => {
             <img src={AboutMeIcon} width="24px" height="24px" alt="about-me" aria-hidden="true" /> About me
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <Link to="/blog">
             <RouteLink>
               <GrBlog /> Blog
             </RouteLink>
           </Link>
-        </li>
+        </li> */}
         <li>
           <NavLink href="/#contact-me">
             <AiOutlineMessage /> Send me a message
