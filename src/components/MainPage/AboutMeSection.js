@@ -15,10 +15,10 @@ import mongodbIcon from "../../assets/images/mongodb-icon.svg"
 const AboutMeSection = ({ width }) => {
   return (
     <AboutMeWrapper id="about-me">
-      <CurrentTopic topicText={"About Me"} styles={{ marginBottom: "1.5em" }} />
+      <CurrentTopic topicText="About Me" styles={{ marginBottom: "1.5em" }} />
       <Text padding="0 2em" letterSpacing="wide">
         I am a full-stack developer with a strong will to contribute to team success through working in Agile distributed teams (either
-        remotely or on-site). I took professional courses from Andela Technical Leadership Program in Software Engineering specializing in
+        remotely or on-site). Andela Technical Leadership Program, a program that focuses on Software Engineering, helped me specialize in
         Full-stack web development. I am also a self-taught mobile developer mainly using React Native.
       </Text>
 

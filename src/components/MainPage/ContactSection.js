@@ -8,7 +8,7 @@ import { HiOutlineMail } from "react-icons/hi"
 const ContactSection = () => {
   return (
     <ContactWrapper id="contact-me">
-      <CurrentTopic topicText={"Contact Me"} styles={{ marginBottom: "1.5em" }} />
+      <CurrentTopic topicText="Contact Me" styles={{ marginBottom: "1.5em" }} />
       <Heading textAlign="center" margin="0 0 1em 0" letterSpacing="wide">
         Interested in working together?
       </Heading>

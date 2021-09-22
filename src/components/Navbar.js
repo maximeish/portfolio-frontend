@@ -2,9 +2,9 @@ import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import { AppContext } from "../context/AppContext"
-import { GrProjects /*GrBlog*/ } from "react-icons/gr"
+import { GrProjects, GrBlog } from "react-icons/gr"
 import { AiOutlineMessage } from "react-icons/ai"
-import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
+import { NavWrapper, NavMenu, NavLink, Hamburger, RouteLink } from "./styles/navbarStyles"
 import AboutMeIcon from "../assets/images/about-me.svg"
 
 const Navbar = () => {
@@ -35,13 +35,13 @@ const Navbar = () => {
             <img src={AboutMeIcon} width="24px" height="24px" alt="about-me" aria-hidden="true" /> About me
           </NavLink>
         </li>
-        {/* <li>
+        <li>
           <Link to="/blog">
             <RouteLink>
               <GrBlog /> Blog
             </RouteLink>
           </Link>
-        </li> */}
+        </li>
         <li>
           <NavLink href="/#contact-me">
             <AiOutlineMessage /> Send me a message
