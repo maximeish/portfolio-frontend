@@ -8,6 +8,7 @@ import {
   DevIcon,
   WorkButton,
   WorkButtonMobile,
+  WorkButtonHover,
 } from "../styles/introSectionStyles.js"
 import Navbar from "../Navbar.js"
 import coderIcon from "../../assets/images/coder-icon.svg"
@@ -45,13 +46,13 @@ const IntroSection = ({ width }) => {
               </animated.span>
             </Text>
             <a href="/#projects">
-              <Button rightIcon={<FiArrowDown />} style={width > 768 ? WorkButton : WorkButtonMobile}>
+              <Button rightIcon={<FiArrowDown />} _hover={{ bg: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
                 <animated.span style={props}>My Work</animated.span>
               </Button>
             </a>
           </LeftContentWrapper>
         </IntroLeftSide>
-        <IntroRightSide style={{ height: state.isMenuToggled && "70%" }}>
+        <IntroRightSide style={{ height: state.isMenuToggled && "60%" }}>
           <ProfileCard width={width} />
         </IntroRightSide>
         <DevIcon hidden={state.isMenuToggled}>
