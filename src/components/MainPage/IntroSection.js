@@ -5,10 +5,10 @@ import {
   IntroLeftSide,
   LeftContentWrapper,
   IntroRightSide,
-  RightContentWrapper,
   DevIcon,
   WorkButton,
   WorkButtonMobile,
+  WorkButtonHover,
 } from "../styles/introSectionStyles.js"
 import Navbar from "../Navbar.js"
 import coderIcon from "../../assets/images/coder-icon.svg"
@@ -17,6 +17,7 @@ import { CurrentTopic } from "../../shared"
 import { Text, Button } from "@chakra-ui/react"
 import { AppContext } from "../../context/AppContext.js"
 import { useSpring, animated, config } from "react-spring"
+import ProfileCard from "./ProfileCard/ProfileCard.js"
 
 const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)
@@ -45,33 +46,14 @@ const IntroSection = ({ width }) => {
               </animated.span>
             </Text>
             <a href="/#projects">
-              <Button rightIcon={<FiArrowDown />} style={width > 768 ? WorkButton : WorkButtonMobile}>
+              <Button rightIcon={<FiArrowDown />} _hover={{ bg: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
                 <animated.span style={props}>My Work</animated.span>
               </Button>
             </a>
           </LeftContentWrapper>
         </IntroLeftSide>
-        <IntroRightSide style={{ height: state.isMenuToggled && "70%" }}>
-          <RightContentWrapper>
-            <Text
-              textAlign={width > 768 ? "center" : "left"}
-              fontSize={width > 768 ? "3xl" : "18px"}
-              color="whiteAlpha.900"
-              lineHeight={width > 768 ? "55px" : "32px"}
-              letterSpacing={width > 768 && "wide"}>
-              {width < 768 && (
-                <animated.span style={props}>
-                  Hello,
-                  <br />
-                  my name's Maxime. <br /> <br />
-                </animated.span>
-              )}
-              <animated.span style={props}>
-                Full stack Developer <br />
-                and UI Designer.
-              </animated.span>
-            </Text>
-          </RightContentWrapper>
+        <IntroRightSide style={{ height: state.isMenuToggled && "60%" }}>
+          <ProfileCard width={width} />
         </IntroRightSide>
         <DevIcon hidden={state.isMenuToggled}>
           <img src={coderIcon} alt="" />

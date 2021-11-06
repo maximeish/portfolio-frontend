@@ -58,27 +58,8 @@ export const IntroRightSide = styled.div`
 export const LeftContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 2em;
-`
-
-export const RightContentWrapper = styled.div`
-  background: #6c63ff;
-  padding: 2em;
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 768px) {
-    padding: 0px;
-    height: 280px;
-    width: 280px;
-    border-radius: 10px;
-  }
+  row-gap: 1em;
+  justify-content: flex-start;
 `
 
 // const WorkButton = styled.div`
@@ -134,6 +115,7 @@ export const WorkButton = {
   background: "#6C63FF",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
   borderRadius: "7px",
+  transition: "all 0.3s ease-in-out",
 }
 
 export const WorkButtonMobile = {
@@ -143,7 +125,19 @@ export const WorkButtonMobile = {
   padding: "0.5em 1em",
   fontSize: "small",
   borderRadius: "5px",
+  marginTop: "-3em",
 
   background: "#6C63FF",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  transition: "all 0.3s ease-in-out",
+  "&:hover": {
+    background: "red",
+  },
+}
+
+export const WorkButtonHover = {
+  bg: "teal.600",
+  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.5)",
+  borderRadius: "7px",
+  transition: "all 0.3s ease-in-out",
 }
