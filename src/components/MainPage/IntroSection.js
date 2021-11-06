@@ -8,7 +8,6 @@ import {
   DevIcon,
   WorkButton,
   WorkButtonMobile,
-  WorkButtonHover,
 } from "../styles/introSectionStyles.js"
 import Navbar from "../Navbar.js"
 import coderIcon from "../../assets/images/coder-icon.svg"
