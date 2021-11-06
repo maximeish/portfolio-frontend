@@ -10,6 +10,8 @@
 <img align="left" alt="Emotion" width="150px" src="https://raw.githubusercontent.com/emotion-js/emotion/main/emotion.png"/>
 </p>
 
+---
+
 Run:
 
 ### `npm start`
