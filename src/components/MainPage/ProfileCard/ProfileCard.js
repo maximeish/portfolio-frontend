@@ -1,5 +1,5 @@
 import React from "react"
-import { RightContentWrapper, TheCard, CardFront, CardBack } from "../../styles/introSectionStyles.js"
+import { RightContentWrapper, TheCard, CardFront, CardBack } from "./styles"
 import { Text } from "@chakra-ui/react"
 import { useSpring, animated, config } from "react-spring"
 import ProfileImage from "./assets/profileimage.jpeg"

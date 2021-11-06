@@ -58,78 +58,8 @@ export const IntroRightSide = styled.div`
 export const LeftContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  row-gap: 2em;
-`
-
-export const RightContentWrapper = styled.div`
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-
-  /* :hover > div {
-    transform: rotateY (180deg);
-  } */
-
-  @media (max-width: 768px) {
-    height: 280px;
-    width: 280px;
-    border-radius: 10px;
-  }
-`
-
-export const TheCard = styled.div`
-  width: 100%;
-  height: 100%;
-  /* border-radius: 10px; */
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-  /* transform: translate(-50%, -50%); */
-
-  :hover {
-    transform: rotateY(180deg);
-  }
-`
-
-export const CardFront = styled.div`
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #6c63ff;
-  padding: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  backface-visibility: hidden;
-  overflow: hidden;
-
-  @media (max-width: 768px) {
-    padding: 0px;
-    border-radius: 10px;
-  }
-`
-
-export const CardBack = styled.div`
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 50%;
-  text-align: center;
-  transform: rotateY(180deg);
-
-  & > img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    border-radius: 10px;
-  }
+  row-gap: 1em;
+  justify-content: flex-start;
 `
 
 // const WorkButton = styled.div`
@@ -185,6 +115,7 @@ export const WorkButton = {
   background: "#6C63FF",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
   borderRadius: "7px",
+  transition: "all 0.3s ease-in-out",
 }
 
 export const WorkButtonMobile = {
@@ -194,7 +125,19 @@ export const WorkButtonMobile = {
   padding: "0.5em 1em",
   fontSize: "small",
   borderRadius: "5px",
+  marginTop: "-3em",
 
   background: "#6C63FF",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  transition: "all 0.3s ease-in-out",
+  "&:hover": {
+    background: "red",
+  },
+}
+
+export const WorkButtonHover = {
+  bg: "teal.600",
+  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.5)",
+  borderRadius: "7px",
+  transition: "all 0.3s ease-in-out",
 }
