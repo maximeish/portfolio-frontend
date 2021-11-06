@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce7e5795-bb9d-4cf1-8ad6-df97bacbec5d/deploy-status)](https://app.netlify.com/sites/maximeishimwe/deploys)
 
-# My portfolio using:
+# My portfolio
 
 ## [React](https://reactjs.org/) &middot; [Emotion](https://emotion.sh/) &middot; [Chakra UI](https://chakra-ui.com/)
 
