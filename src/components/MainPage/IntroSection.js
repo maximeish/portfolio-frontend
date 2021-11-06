@@ -5,7 +5,6 @@ import {
   IntroLeftSide,
   LeftContentWrapper,
   IntroRightSide,
-  RightContentWrapper,
   DevIcon,
   WorkButton,
   WorkButtonMobile,
@@ -17,6 +16,7 @@ import { CurrentTopic } from "../../shared"
 import { Text, Button } from "@chakra-ui/react"
 import { AppContext } from "../../context/AppContext.js"
 import { useSpring, animated, config } from "react-spring"
+import ProfileCard from "./ProfileCard/ProfileCard.js"
 
 const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)
@@ -52,26 +52,7 @@ const IntroSection = ({ width }) => {
           </LeftContentWrapper>
         </IntroLeftSide>
         <IntroRightSide style={{ height: state.isMenuToggled && "70%" }}>
-          <RightContentWrapper>
-            <Text
-              textAlign={width > 768 ? "center" : "left"}
-              fontSize={width > 768 ? "3xl" : "18px"}
-              color="whiteAlpha.900"
-              lineHeight={width > 768 ? "55px" : "32px"}
-              letterSpacing={width > 768 && "wide"}>
-              {width < 768 && (
-                <animated.span style={props}>
-                  Hello,
-                  <br />
-                  my name's Maxime. <br /> <br />
-                </animated.span>
-              )}
-              <animated.span style={props}>
-                Full stack Developer <br />
-                and UI Designer.
-              </animated.span>
-            </Text>
-          </RightContentWrapper>
+          <ProfileCard width={width} />
         </IntroRightSide>
         <DevIcon hidden={state.isMenuToggled}>
           <img src={coderIcon} alt="" />
