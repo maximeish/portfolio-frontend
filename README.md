@@ -2,9 +2,7 @@
 
 # My portfolio using:
 
-# [React](https://reactjs.org/) &middot; [Emotion](https://emotion.sh/) &middot; [Chakra UI](https://chakra-ui.com/)
-
----
+## [React](https://reactjs.org/) &middot; [Emotion](https://emotion.sh/) &middot; [Chakra UI](https://chakra-ui.com/)
 
 Run:
 
