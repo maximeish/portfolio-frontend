@@ -4,11 +4,11 @@ import styled from "@emotion/styled"
 import { Text, Divider, Heading } from "@chakra-ui/react"
 import screenWidth from "../../utilities/screenWidth.js"
 
-import IntroSection from "./IntroSection.js"
+import IntroSection from "./IntroSection/IntroSection.js"
 import ProjectsSection from "./ProjectsSection.js"
 import AboutMeSection from "./AboutMeSection.js"
 import CompaniesSection from "./CompaniesSection.js"
-// import TestimonialsSection from "./TestimonialsSection.js"
+import TestimonialsSection from "./Testimonials/TestimonialsSection.js"
 import ContactSection from "./ContactSection.js"
 import FooterSection from "./FooterSection.js"
 
@@ -46,9 +46,9 @@ const Main = () => {
 
         <Divider margin="4em 0" />
 
-        {/* <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
 
-        <Divider margin="2em 0" /> */}
+        {/* <Divider margin="2em 0" /> */}
 
         <ContactSection width={width} />
       </LandingPageWrapper>

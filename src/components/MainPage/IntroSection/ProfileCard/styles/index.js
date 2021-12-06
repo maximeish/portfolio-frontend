@@ -18,10 +18,12 @@ export const TheCard = styled.div`
   /* border-radius: 10px; */
   transform-style: preserve-3d;
   transition: all 0.8s ease;
+  border-radius: 50%;
   /* transform: translate(-50%, -50%); */
 
   :hover {
     transform: rotateY(180deg);
+    box-shadow: 0px 0px 7px #8c85ff;
   }
 `
 
