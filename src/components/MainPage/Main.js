@@ -8,7 +8,7 @@ import IntroSection from "./IntroSection/IntroSection.js"
 import ProjectsSection from "./ProjectsSection.js"
 import AboutMeSection from "./AboutMeSection.js"
 import CompaniesSection from "./CompaniesSection.js"
-import TestimonialsSection from "./Testimonials/TestimonialsSection.js"
+// import TestimonialsSection from "./Testimonials/TestimonialsSection.js"
 import ContactSection from "./ContactSection.js"
 import FooterSection from "./FooterSection.js"
 
