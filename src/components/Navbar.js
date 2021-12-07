@@ -6,6 +6,7 @@ import { GrProjects } from "react-icons/gr"
 import { AiOutlineMessage } from "react-icons/ai"
 import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
 import AboutMeIcon from "../assets/images/about-me.svg"
+import { ColorModeSwitcher } from "../shared/ColorModeSwitcher"
 
 const Navbar = () => {
   const { state, setState } = useContext(AppContext)
@@ -46,6 +47,9 @@ const Navbar = () => {
           <NavLink href="/#contact-me">
             <AiOutlineMessage /> Send me a message
           </NavLink>
+        </li>
+        <li>
+          <ColorModeSwitcher justifySelf="flex-end" />
         </li>
       </NavMenu>
 

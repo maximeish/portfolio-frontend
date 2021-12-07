@@ -1,7 +1,8 @@
 import React from "react"
-import { CurrentTopic } from "../../shared"
+import { CurrentTopic } from "../../../shared"
 import { Text } from "@chakra-ui/react"
-import { TestimonialsWrapper } from "../styles/testimonialsSectionStyles.js"
+import { TestimonialsWrapper } from "../../styles/testimonialsSectionStyles.js"
+import CarouselWrapper from "./CarouselWrapper"
 
 const TestimonialsSection = () => {
   return (
@@ -10,6 +11,8 @@ const TestimonialsSection = () => {
       <Text padding="0 2em" letterSpacing="wide">
         Here is who I worked with what they said...
       </Text>
+
+      <CarouselWrapper />
     </TestimonialsWrapper>
   )
 }

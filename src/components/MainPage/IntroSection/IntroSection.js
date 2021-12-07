@@ -8,13 +8,13 @@ import {
   DevIcon,
   WorkButton,
   WorkButtonMobile,
-} from "../styles/introSectionStyles.js"
-import Navbar from "../Navbar.js"
-import coderIcon from "../../assets/images/coder-icon.svg"
+} from "../../styles/introSectionStyles.js"
+import Navbar from "../../Navbar"
+import coderIcon from "../../../assets/images/coder-icon.svg"
 import { FiArrowDown } from "react-icons/fi"
-import { CurrentTopic } from "../../shared"
+import { CurrentTopic } from "../../../shared"
 import { Text, Button } from "@chakra-ui/react"
-import { AppContext } from "../../context/AppContext.js"
+import { AppContext } from "../../../context/AppContext"
 import { useSpring, animated, config } from "react-spring"
 import ProfileCard from "./ProfileCard/ProfileCard.js"
 
