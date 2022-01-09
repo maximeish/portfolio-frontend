@@ -59,7 +59,7 @@ const Main = () => {
         Thanks for visiting my site
       </Heading>
       <Text textAlign="center" opacity="0.6" fontSize="small" letterSpacing="wider" margin="1em 0 4em 0" padding="1em 2em 0 2em">
-        Please be aware that I am still working on some features to be added to this site, including the blogging system and sending
+        Please be aware that some features are still being worked on to be added to this site, including the blogging system and sending
         messages
       </Text>
 
