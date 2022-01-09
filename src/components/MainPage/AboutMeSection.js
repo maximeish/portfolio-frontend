@@ -68,7 +68,7 @@ const AboutMeSection = ({ width }) => {
       </SimpleGrid>
 
       <Text padding="0 2em" letterSpacing="wide" textAlign="center">
-        ...and a few more. Plus, I am willing to learn new ones too when needed.
+        ...
       </Text>
     </AboutMeWrapper>
   )

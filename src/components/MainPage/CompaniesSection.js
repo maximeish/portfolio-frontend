@@ -8,7 +8,7 @@ const CompaniesSection = ({ width }) => {
   return (
     <CompaniesWrapper>
       <Text textAlign="center" letterSpacing="wide">
-        I'm glad to have also been trained and worked with some awesome companies...
+        I'm glad to have also been trained and worked with these awesome companies...
       </Text>
       <SimpleGrid
         templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
