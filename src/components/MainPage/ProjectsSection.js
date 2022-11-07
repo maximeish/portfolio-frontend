@@ -2,6 +2,7 @@ import React from "react"
 import { ProjectsWrapper, SeeMore } from "../styles/projectsSectionStyles.js"
 import { CurrentTopic, ProjectBox } from "../../shared"
 import uplusLogo from "../../assets/images/uplus-logo.png"
+import gwizaLogo from "../../assets/images/gwiza-icon.jpg"
 import phantomLogo from "../../assets/images/phantom-logo.svg"
 import pencilIcon from "../../assets/images/pencil-icon.gif"
 import glassesImage from "../../assets/images/glasses-image.png"
@@ -24,6 +25,13 @@ const ProjectsSection = ({ width }) => {
         justifyItems="center"
         minChildWidth="120px"
         spacing="40px">
+        <ProjectBox
+          overlayImage={gwizaLogo}
+          altText="gwiza"
+          headingText="Gwiza+"
+          descriptionText="A complete financial services suite. It gives you the ability to make utility bill payments, manage your expenses, and more."
+          siteLink="https://apps.apple.com/ke/app/gwiza/id1557559496"
+        />
         <ProjectBox
           overlayImage={uplusLogo}
           altText="uplus"

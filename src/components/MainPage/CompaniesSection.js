@@ -1,6 +1,7 @@
 import React from "react"
 import andelaIcon from "../../assets/images/andela-logo.svg"
 import uplusLogo from "../../assets/images/uplus-logo.png"
+import mvendLogo from "../../assets/images/mvend-logo.jpg"
 import { CompaniesWrapper } from "../styles/companiesSectionStyles.js"
 import { Text, SimpleGrid } from "@chakra-ui/react"
 
@@ -11,7 +12,7 @@ const CompaniesSection = ({ width }) => {
         I'm glad to have also been trained and worked with these awesome companies...
       </Text>
       <SimpleGrid
-        templateColumns={width > 768 ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+        templateColumns={width > 768 ? "repeat(3, 1fr)" : "repeat(1, 1fr)"}
         columnGap={width > 768 ? 2 : 0}
         rowGap={width > 768 ? "4em" : "2em"}
         marginTop="4em"
@@ -19,6 +20,7 @@ const CompaniesSection = ({ width }) => {
         justifyContent="center"
         justifyItems="center"
         alignContent="center"
+        alignItems="center"
         minChildWidth="120px"
         gridAutoRows={width < 768 && "150px"}
         spacing="40px">
@@ -27,6 +29,9 @@ const CompaniesSection = ({ width }) => {
         </div>
         <div>
           <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
+        </div>
+        <div>
+          <img src={mvendLogo} alt="uplus mutual partners" width="150px" height="150px" />
         </div>
         {/* <TechStack>
             <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
