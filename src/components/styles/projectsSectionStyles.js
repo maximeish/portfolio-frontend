@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const ProjectsWrapper = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   padding: 2em 0 0 0;
 
   @media (max-width: 768px) {
