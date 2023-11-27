@@ -73,3 +73,19 @@ export const CardBack = styled.div`
     border-radius: 10px;
   }
 `
+export const TextTyping = styled.div``
+
+export const RoleList = styled.ul`
+  height: 1.3em;
+  line-height: 1.3em;
+  overflow: hidden;
+`
+
+export const Role = styled.li`
+  list-style: none;
+  font-weight: 600;
+`
+
+export const RoleTxt = styled.div`
+  font-size: 0.9em;
+`

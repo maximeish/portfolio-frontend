@@ -136,7 +136,7 @@ export const WorkButtonMobile = {
 }
 
 export const WorkButtonHover = {
-  bg: "teal.600",
+  background: "teal.600",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.5)",
   borderRadius: "7px",
   transition: "all 0.3s ease-in-out",

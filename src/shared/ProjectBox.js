@@ -3,10 +3,10 @@ import { Text, Button, Heading } from "@chakra-ui/react"
 import { BiWorld } from "react-icons/bi"
 import { ProjectBoxWrapper, BoxOverlay, BoxContent } from "./styles/projectBoxStyles"
 
-const ProjectBox = ({ overlayImage, headingText, descriptionText, siteLink, altText }) => {
+const ProjectBox = ({ overlayImage, headingText, descriptionText, siteLink, altText, color = "white" }) => {
   return (
     <ProjectBoxWrapper>
-      <BoxOverlay>
+      <BoxOverlay style={{ background: color !== undefined && color }}>
         <img src={overlayImage} alt={altText} />
       </BoxOverlay>
 

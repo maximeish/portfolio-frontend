@@ -37,15 +37,16 @@ const IntroSection = ({ width }) => {
         <IntroLeftSide>
           <LeftContentWrapper>
             <animated.span style={props}>
-              <CurrentTopic hidden={width > 768 ? false : true} topicText="Maxime Ishimwe" />
+              <CurrentTopic hidden={width > 768 ? false : true} topicText="Bio" />
             </animated.span>
-            <Text hidden={width > 768 ? false : true} fontSize="4xl">
+            <Text hidden={width > 768 ? false : true} fontSize="2xl">
               <animated.span style={props}>
-                Hello, <br /> my name's Maxime.
+                Hi, <br /> I'm Maxime.
               </animated.span>
+              <Text>Full Stack Developer and UI/UX Designer</Text>
             </Text>
             <a href="/#projects">
-              <Button rightIcon={<FiArrowDown />} _hover={{ bg: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
+              <Button rightIcon={<FiArrowDown />} _hover={{ bgColor: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
                 <animated.span style={props}>My Work</animated.span>
               </Button>
             </a>

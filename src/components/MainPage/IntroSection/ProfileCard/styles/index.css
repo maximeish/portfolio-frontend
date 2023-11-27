@@ -1,0 +1,33 @@
+.typd-wrp {
+  position: relative;
+  top: 0;
+  animation: slide 3s steps(2) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -2.6em;
+  }
+}
+
+.typd {
+  position: relative;
+}
+
+.typd::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #6c63ff;
+  border-left: 4px solid #fff;
+  animation: typing 1.5s steps(6) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 0.2em;
+  }
+}
