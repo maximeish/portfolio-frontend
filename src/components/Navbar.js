@@ -2,10 +2,8 @@ import React, { useContext } from "react"
 import { Link } from "react-router-dom"
 import Logo from "../assets/images/logo.svg"
 import { AppContext } from "../context/AppContext"
-import { GrProjects } from "react-icons/gr"
-import { AiOutlineMessage } from "react-icons/ai"
+import { AiOutlineMessage, AiOutlineProject, AiOutlineUser } from "react-icons/ai"
 import { NavWrapper, NavMenu, NavLink, Hamburger } from "./styles/navbarStyles"
-import AboutMeIcon from "../assets/images/about-me.svg"
 import { ColorModeSwitcher } from "../shared/ColorModeSwitcher"
 
 const Navbar = () => {
@@ -28,12 +26,12 @@ const Navbar = () => {
       <NavMenu className={state.isMenuToggled ? "-open" : null}>
         <li>
           <NavLink href="/#projects">
-            <GrProjects /> Projects
+            <AiOutlineProject /> Projects
           </NavLink>
         </li>
         <li>
           <NavLink href="/#about-me">
-            <img src={AboutMeIcon} width="24px" height="24px" alt="about-me" aria-hidden="true" /> About me
+            <AiOutlineUser /> About
           </NavLink>
         </li>
         {/* <li>
@@ -45,7 +43,7 @@ const Navbar = () => {
         </li> */}
         <li>
           <NavLink href="/#contact-me">
-            <AiOutlineMessage /> Send me a message
+            <AiOutlineMessage /> Send a message
           </NavLink>
         </li>
         <li>
