@@ -17,13 +17,17 @@ const AboutMeSection = ({ width }) => {
     <AboutMeWrapper id="about-me">
       <CurrentTopic topicText="About Me" styles={{ marginBottom: "1.5em" }} />
       <Text padding="0 2em" letterSpacing="wide">
-        I am a full-stack developer with a strong will to contribute to team success through working in Agile distributed teams (either
-        remotely or on-site). Andela Technical Leadership Program, a program that focuses on Software Engineering, helped me specialize in
-        Full-stack web development. I am also a self-taught mobile developer mainly using React Native.
+        I am a full stack web and mobile application developer with a strong will to contribute to team success through collaboration and
+        working in agile distributed teams (either remotely or on-site). I also do UI/UX design using tools like Figma and Adobe XD
+        along-side MERN, PERN stacks and React Native.
+        <br />
+        <br />
+        As I work on a product, I am willing to learn and apply new technologies where I can grow my skills and use the same skills in a
+        better way I can find.
       </Text>
 
       <Text padding="1em 2em" letterSpacing="wide">
-        Here are some technologies that I work with...
+        Here are some languages I work with...
       </Text>
 
       <SimpleGrid
@@ -42,7 +46,7 @@ const AboutMeSection = ({ width }) => {
           <img src={typeScriptIcon} alt="typescript" title="TypeScript" />
         </TechStack>
         <TechStack>
-          <img src={reactIcon} alt="react" width="150px" height="150px" title="React" />
+          <img src={reactIcon} alt="react" width="150px" height="150px" title="React.js" />
         </TechStack>
         <TechStack>
           <img src={firebaseIcon} alt="firebase" width="150px" height="150px" title="Firebase" />
@@ -57,13 +61,13 @@ const AboutMeSection = ({ width }) => {
           <img src={figmaIcon} alt="figma" width="150px" height="150px" title="Figma" />
         </TechStack>
         <TechStack>
-          <img src={nodejsIcon} alt="nodejs" width="150px" height="150px" title="NodeJS" />
+          <img src={nodejsIcon} alt="nodejs" width="150px" height="150px" title="Node.js" />
         </TechStack>
         <TechStack>
           <img src={mongodbIcon} alt="mongoDB" width="150px" height="150px" title="MongoDB" />
         </TechStack>
         <TechStack>
-          <img src={expressIcon} alt="express" width="150px" height="150px" title="Express" />
+          <img src={expressIcon} alt="express" width="150px" height="150px" title="Express.js" />
         </TechStack>
       </SimpleGrid>
 

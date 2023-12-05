@@ -31,7 +31,7 @@ const ProjectsSection = ({ width }) => {
           headingText="Gwiza+"
           descriptionText="A complete financial services suite. It gives you the ability to make utility bill payments, manage your expenses, and more."
           siteLink="https://apps.apple.com/ke/app/gwiza/id1557559496"
-          color="darkslateblue"
+          color="#04304d"
         />
         <ProjectBox
           overlayImage={uplusLogo}

@@ -25,6 +25,4 @@ export const ColorModeSwitcher = (props) => {
   )
 }
 
-console.log("mode now", mode)
-
 export default mode

@@ -45,7 +45,7 @@ const IntroSection = ({ width }) => {
               </animated.span>
               <Text>Full Stack Developer and UI/UX Designer</Text>
             </Text>
-            <a href="/#projects">
+            <a href="#projects">
               <Button rightIcon={<FiArrowDown />} _hover={{ bgColor: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
                 <animated.span style={props}>My Work</animated.span>
               </Button>
