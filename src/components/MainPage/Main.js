@@ -14,7 +14,7 @@ import FooterSection from "./FooterSection.js"
 
 // import nextSectionIcon from "../assets/images/next-section.svg"
 
-const LandingPageWrapper = styled.div`
+const LandingPageWrapper = styled.main`
   padding: 0 4em;
 
   @media (max-width: 768px) {

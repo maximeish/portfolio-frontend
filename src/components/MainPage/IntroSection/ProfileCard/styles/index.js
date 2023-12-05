@@ -6,7 +6,7 @@ export const RightContentWrapper = styled.div`
   border-radius: 50%;
 
   @media (max-width: 768px) {
-    height: 280px;
+    height: 340px;
     width: 280px;
     border-radius: 10px;
   }
@@ -24,6 +24,12 @@ export const TheCard = styled.div`
   :hover {
     transform: rotateY(180deg);
     box-shadow: 0px 0px 7px #8c85ff;
+  }
+
+  @media (max-width: 768px) {
+    :hover {
+      box-shadow: none;
+    }
   }
 `
 
@@ -45,6 +51,8 @@ export const CardFront = styled.div`
 
   @media (max-width: 768px) {
     padding: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 10px;
   }
 `
@@ -70,6 +78,25 @@ export const CardBack = styled.div`
   }
 
   @media (max-width: 768px) {
-    border-radius: 10px;
+    & > img {
+      border-radius: 50%;
+      padding: 0 1em;
+    }
   }
+`
+export const TextTyping = styled.div``
+
+export const RoleList = styled.ul`
+  height: 1.3em;
+  line-height: 1.3em;
+  overflow: hidden;
+`
+
+export const Role = styled.li`
+  list-style: none;
+  font-weight: 600;
+`
+
+export const RoleTxt = styled.div`
+  font-size: 0.9em;
 `

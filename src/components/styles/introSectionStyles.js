@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const IntroPageWrapper = styled.main`
+export const IntroPageWrapper = styled.section`
   height: 100vh;
   position: relative;
 
@@ -10,7 +10,7 @@ export const IntroPageWrapper = styled.main`
 
 export const IntroText = styled.span``
 
-export const IntroPageSection = styled.section`
+export const IntroPageSection = styled.div`
   max-height: 100%;
   height: 75%;
   margin-left: 4.5em;
@@ -136,7 +136,7 @@ export const WorkButtonMobile = {
 }
 
 export const WorkButtonHover = {
-  bg: "teal.600",
+  background: "teal.600",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.5)",
   borderRadius: "7px",
   transition: "all 0.3s ease-in-out",

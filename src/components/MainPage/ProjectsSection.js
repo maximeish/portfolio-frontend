@@ -31,6 +31,7 @@ const ProjectsSection = ({ width }) => {
           headingText="Gwiza+"
           descriptionText="A complete financial services suite. It gives you the ability to make utility bill payments, manage your expenses, and more."
           siteLink="https://apps.apple.com/ke/app/gwiza/id1557559496"
+          color="#04304d"
         />
         <ProjectBox
           overlayImage={uplusLogo}
@@ -38,6 +39,7 @@ const ProjectsSection = ({ width }) => {
           headingText="Uplus Mutual Partners"
           descriptionText="A digital group financing platform that enables people to pull funds together in a group"
           siteLink="https://uplus.rw"
+          color="white"
         />
         <ProjectBox
           overlayImage={phantomLogo}
@@ -45,6 +47,7 @@ const ProjectsSection = ({ width }) => {
           headingText="Phantom"
           descriptionText="Phantom is a web application that allows passengers to track bus location and movements around Kigali"
           siteLink="https://orcas-phantom-frontend.herokuapp.com"
+          color="white"
         />
         <ProjectBox
           overlayImage={pencilIcon}
@@ -52,6 +55,7 @@ const ProjectsSection = ({ width }) => {
           headingText="QuizApp"
           descriptionText="QuizApp is a web application for daily practice quizzes to sharpen your skills in different subjects, and save your score"
           siteLink="http://quizapp.byethost11.com/dev"
+          color="white"
         />
         <ProjectBox
           overlayImage={glassesImage}
@@ -59,6 +63,7 @@ const ProjectsSection = ({ width }) => {
           headingText="Glasses 3D Model configurator"
           descriptionText="A side project for a 3D GLTF glasses model configurator using React Three Fiber"
           siteLink="https://glasses-gltf.netlify.app/"
+          color="white"
         />
       </SimpleGrid>
       <SeeMore>

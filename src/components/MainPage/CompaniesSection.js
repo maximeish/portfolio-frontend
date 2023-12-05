@@ -25,13 +25,19 @@ const CompaniesSection = ({ width }) => {
         gridAutoRows={width < 768 && "150px"}
         spacing="40px">
         <div>
-          <img src={andelaIcon} width="150px" height="150px" alt="andela rwanda" />
+          <a href="https://andela.com">
+            <img src={andelaIcon} width="150px" height="150px" alt="andela rwanda" />
+          </a>
         </div>
         <div>
-          <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
+          <a href="https://uplus.rw">
+            <img src={uplusLogo} alt="uplus mutual partners" width="150px" height="150px" />
+          </a>
         </div>
         <div>
-          <img src={mvendLogo} alt="uplus mutual partners" width="150px" height="150px" />
+          <a href="https://mvend.co.rw">
+            <img src={mvendLogo} alt="mvend limited" width="150px" height="150px" />
+          </a>
         </div>
         {/* <TechStack>
             <img src={firebaseIcon} alt="firebase" width="150px" height="150px" />
