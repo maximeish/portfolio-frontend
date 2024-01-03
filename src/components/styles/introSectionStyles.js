@@ -110,9 +110,23 @@ export const WorkButton = {
   width: "fit-content",
   color: "white",
   letterSpacing: "0.2em",
-  padding: "1.5em 2em",
+  padding: "1.5em 2em 1.5em 1em",
+  cursor: "pointer",
 
   background: "#6C63FF",
+  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  borderRadius: "7px",
+  transition: "all 0.3s ease-in-out",
+}
+
+export const ResumeBtn = {
+  width: "fit-content",
+  color: "black",
+  letterSpacing: "0.1em",
+  padding: "1.5em 2em",
+  cursor: "pointer",
+
+  background: "#e7e9e9",
   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
   borderRadius: "7px",
   transition: "all 0.3s ease-in-out",
@@ -133,6 +147,20 @@ export const WorkButtonMobile = {
   "&:hover": {
     background: "red",
   },
+}
+
+export const ResumeBtnMobile = {
+  letterSpacing: "0.1em",
+  width: "fit-content",
+  color: "black",
+  padding: "0.5em 1em",
+  fontSize: "small",
+  borderRadius: "5px",
+  marginTop: "0",
+
+  background: "#e7e9e9",
+  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  transition: "all 0.3s ease-in-out",
 }
 
 export const WorkButtonHover = {

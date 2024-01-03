@@ -37,7 +37,7 @@ const FooterSection = ({ width }) => {
         </div> */}
       </SimpleGrid>
       <Text textAlign="center" color="whiteAlpha.800" letterSpacing="widest">
-        Made by me © 2023
+        Made by me © 2024
       </Text>
     </FooterWrapper>
   )

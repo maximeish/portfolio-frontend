@@ -8,15 +8,19 @@ import {
   DevIcon,
   WorkButton,
   WorkButtonMobile,
+  ResumeBtn,
+  ResumeBtnMobile,
 } from "../../styles/introSectionStyles.js"
 import Navbar from "../../Navbar"
 import coderIcon from "../../../assets/images/coder-icon.svg"
 import { FiArrowDown } from "react-icons/fi"
+import { AiOutlineFilePdf } from "react-icons/ai"
 import { CurrentTopic } from "../../../shared"
 import { Text, Button } from "@chakra-ui/react"
 import { AppContext } from "../../../context/AppContext"
 import { useSpring, animated, config } from "react-spring"
 import ProfileCard from "./ProfileCard/ProfileCard.js"
+import Resume from "./ISHIMWE_MAXIME_RESUME.pdf"
 
 const IntroSection = ({ width }) => {
   const { state } = useContext(AppContext)
@@ -46,8 +50,13 @@ const IntroSection = ({ width }) => {
               <Text>Full Stack Developer and UI/UX Designer</Text>
             </Text>
             <a href="#projects">
-              <Button rightIcon={<FiArrowDown />} _hover={{ bgColor: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
+              <Button leftIcon={<FiArrowDown />} _hover={{ bgColor: "teal.600" }} style={width > 768 ? WorkButton : WorkButtonMobile}>
                 <animated.span style={props}>My Work</animated.span>
+              </Button>
+            </a>
+            <a href={Resume} download="Maxime_Ishimwe_Resume" target="_blank" rel="noreferrer" cursor="pointer">
+              <Button rightIcon={<AiOutlineFilePdf />} _hover={{ bgColor: "teal.600" }} style={width > 768 ? ResumeBtn : ResumeBtnMobile}>
+                <animated.span style={props}>View Resume</animated.span>
               </Button>
             </a>
           </LeftContentWrapper>

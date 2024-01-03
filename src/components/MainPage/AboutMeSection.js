@@ -17,13 +17,12 @@ const AboutMeSection = ({ width }) => {
     <AboutMeWrapper id="about-me">
       <CurrentTopic topicText="About Me" styles={{ marginBottom: "1.5em" }} />
       <Text padding="0 2em" letterSpacing="wide">
-        I am a full stack web and mobile application developer with a strong will to contribute to team success through collaboration and
-        working in agile distributed teams (either remotely or on-site). I also do UI/UX design using tools like Figma and Adobe XD
-        along-side MERN, PERN stacks and React Native.
+        With a strong determination to enhance team success through collaboration, I contribute as a full stack web and mobile application
+        developer. Working adeptly in agile distributed teams, whether on-site or remotely, I also engage in UI/UX design utilizing tools
+        like Figma and Adobe XD. My expertise encompasses MERN, PERN stacks, and React Native.
         <br />
         <br />
-        As I work on a product, I am willing to learn and apply new technologies where I can grow my skills and use the same skills in a
-        better way I can find.
+        Working on a product, I'm open to learning and applying new technologies, enhancing and leveraging my skills more effectively.
       </Text>
 
       <Text padding="1em 2em" letterSpacing="wide">
