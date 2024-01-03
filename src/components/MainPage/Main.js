@@ -53,7 +53,7 @@ const Main = () => {
         <ContactSection width={width} />
       </LandingPageWrapper>
 
-      <Divider margin="4em 0" />
+      {/* <Divider margin="4em 0" />
 
       <Heading textAlign="center" opacity="0.6" fontSize="medium" letterSpacing="wider" marginTop="4em">
         Thanks for visiting my site
@@ -61,7 +61,7 @@ const Main = () => {
       <Text textAlign="center" opacity="0.6" fontSize="small" letterSpacing="wider" margin="1em 0 4em 0" padding="1em 2em 0 2em">
         Please be aware that some features are still being worked on to be added to this site, including the blogging system and sending
         messages
-      </Text>
+      </Text> */}
 
       {/* <Divider margin="2em 0" /> */}
 
