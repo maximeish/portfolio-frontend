@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 
 export const ContactWrapper = styled.section`
   /* height: 50vh; */
+  padding-bottom: 4em;
 `
 
 // const FooterWrapper = styled.section`
