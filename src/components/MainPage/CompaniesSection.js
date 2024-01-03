@@ -35,7 +35,7 @@ const CompaniesSection = ({ width }) => {
           </a>
         </div>
         <div>
-          <a href="https://mvend.co.rw">
+          <a href="https://fintech-consult.com/fintech/mvend">
             <img src={mvendLogo} alt="mvend limited" width="150px" height="150px" />
           </a>
         </div>
