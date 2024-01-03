@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 // import { CurrentTopic } from "../../shared"
-import { Text, Divider, Heading } from "@chakra-ui/react"
+import { Divider } from "@chakra-ui/react"
 import screenWidth from "../../utilities/screenWidth.js"
 
 import IntroSection from "./IntroSection/IntroSection.js"
